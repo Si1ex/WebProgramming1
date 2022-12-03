@@ -1,0 +1,11 @@
+#otsikko {
+    white-space: nowrap;
+}
+#blue {
+    color: rgb(173, 216, 230);
+    cursor: url(https://cdn-icons-png.flaticon.com/128/5702/5702253.png), auto;
+}
+#lista {
+    list-style-image: url(https://cdn-icons-png.flaticon.com/128/5702/5702253.png);
+    list-style-position: inside;
+}

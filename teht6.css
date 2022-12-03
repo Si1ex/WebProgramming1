@@ -1,0 +1,27 @@
+a:link {
+        text-transform: uppercase;
+        text-decoration-line: none;
+}
+a:visited {
+    font-size: 3px;
+}
+a:hover {
+    font-size: 48px;
+    color: gray;
+}
+h1::first-letter {
+    font-size: 200%;
+    color: grey;
+}
+h2::first-letter {
+    font-size: 200%;
+    color: grey;
+}
+h3::first-letter {
+    font-size: 200%;
+    color: grey;
+}
+h4::first-letter {
+    font-size: 200%;
+    color: grey;
+}
