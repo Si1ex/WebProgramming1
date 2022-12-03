@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <form action="http://codez.savonia.fi/jussi/api/test.php" method="get">
+            <table>
+                <tr>
+                    <td><label for="name">Nimi: </label></td>
+                    <td><input type="text" name="nimi"><br></td>
+                </tr>
+
+                <tr>
+                    <td><label for="name">Vuosikurssi: </label></td>
+                    <td><input type="password" name="vuosi"> <br></td>
+                </tr>
+
+                <tr>
+                    <td><label for="nimi">Kurssin nimi: </label></td>
+                    <td>
+                        <select name="course[]" id="kurssi" multiple>
+                            <optgroup label="Luonnontieteet">
+                                <option value="kemia">Kemia</option>
+                                <option value="matematiikka">Matematiikka</option>
+                                <option value="fysiikka">Fysiikka</option>
+                                <option value="biologia">Biologia</option>
+                            </optgroup>
+                            <optgroup label="Muut">
+                                <option value="tietorakenteet">Psykologia</option>
+                                <option value="kauppatieteet">Kauppatieteet</option>
+                            </optgroup>
+                            
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="course">Kurssin tyyppi: </label></td>
+                    <td>
+                        <select name="course" id="tyyppi">
+                            <option value="Lahiopetus">Lahiopetus</option>
+                            <option value="etä">Etäopetus</option>
+                            <option value="hybridi">Hybridi</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label for="sukupuoli">Sukupuoli: </label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="sukupuoli" value="sukupuoli"></td>
+                    <td><label for="mies" type="radio">Mies</label> </td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="sukupuoli1"></td>
+                    <td><label for="nainen">Nainen</label></td>
+                </tr>
+                <tr>
+                    <td><input type="radio" id="sukupuoli2"></td>
+                    <td><label for="muu">Muu</label></td>
+                </tr>
+
+                <tr>
+                    <td><label for="harrastukset">Harrastukset: </label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="hobbies[]" id="harrastus1"></td>
+                    <td><label for="lenkkeily">Lenkkeily</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="hobbies[]" id="harrastus2"></td>
+                    <td><label for="frisbeegolf">Frisbeegolf</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="hobbies[]" id="harrastus3"></td>
+                    <td><label for="salibandy">Salibandy</label></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox" name="hobbies[]" id="harrastus4"></td>
+                    <td><label for="jalkapallo">Jalkapallo</label></td>
+                </tr>
+
+                <tr>
+                    <td><label for="laitos">Oppilaitos</label></td>
+                    <td><input type="text" name="laitos" value="Savonia AMK" readonly></td>
+                    <td>
+                        <select name="tyyppi" id="tyyppi">
+                            <option value="Savonia AMK">Savonia AMK</option>
+                            <option value="UEF">UEF</option>
+                            <option value="muu">Muu</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <th>
+                        <td><input type="submit"></td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <td><input type="reset"></td>
+                    </th>
+                </tr>
+                <tr>
+                    <th>
+                        <td><input type="image" src="https://cdn-icons-png.flaticon.com/128/5702/5702253.png" alt="kuva" width="48" height="48"></td>
+                    </th>
+                </tr>
+            </table> 
+        </form>
+    </body>
+</html>
